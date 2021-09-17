@@ -7,11 +7,11 @@ The Gallery of My Life
 ## Checklist
 
 # Setup
-[] - npm install, npm run server and npm run client
+[x] - npm install, npm run server and npm run client
 [] - upload personal images (jpeg) for project
 
 # Base Mode
-[] - Create GET in App.jsx 
+[x] - Create GET in App.jsx 
 [] - Create GalleryList component and pass in gallery data stored in App via props
 [] - Iterate over GalleryList data and make GalleryItems
 [] - Create GalleryItem.jsx component and pass GalleryItem via props
