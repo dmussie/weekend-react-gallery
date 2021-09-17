@@ -22,7 +22,8 @@ The Gallery of My Life
 [] - Enable gallery update upon click of like button 
 
 # Stretch
-[] - maybe we'll get here... 
+[] - maybe we'll get here...
+[] - database is a stretch... BUT would it be beneficial to make one for base? 
 
 ## Description
 
