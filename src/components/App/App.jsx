@@ -52,7 +52,7 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         {galleryList.map(picture => (
-          <img key={picture.id} src="images/goat_small.jpg"/>
+          <img key={picture.id} src={picture.path}/>
         ))}
           
         
