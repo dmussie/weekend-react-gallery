@@ -44,7 +44,15 @@ function App() {
   //     console.log('error with updating likes!', error);
   //   })
   // }
-
+  // insert state here for toggle!! Have T or F variable
+  // function to switch between T or False
+  
+  
+  const [galleryBoolean, setGalleryBoolean] = useState(false);
+    const handleSwitch = (pictureId) => {
+      console.log('User clicked image: ', pictureId);
+      switchPicture(pictureId);
+    }  
     return (
       <div className="App">
         <header className="App-header">
@@ -52,11 +60,21 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         {galleryList.map(picture => (
-          
-          <div>
-            <img key={picture.id} src={picture.path}/>
-            {picture.description}
-          </div>
+          {/** use state variable*/},
+          {/** single line function */},
+          {/** START HERE ternary operator, do I want an image or description: if TRUE, display image, if FALSE display description */},
+          {/** Figure out True or False for operator */},
+          (
+          galleryBoolean ? (
+            <p>{picture.description}</p>,
+            <img key={picture.id} onClick={() => setGalleryBoolean(true)} />
+          ) : (
+            
+            <img key={picture.id} src={picture.path} /> 
+          )
+            
+         
+          )
           
           
           
