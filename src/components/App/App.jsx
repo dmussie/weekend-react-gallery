@@ -52,9 +52,19 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         {galleryList.map(picture => (
-          <img key={picture.id} src={picture.path}/>
-        ))}
           
+          <div>
+            <img key={picture.id} src={picture.path}/>
+            {picture.description}
+          </div>
+          
+          
+          
+          
+        ))}
+        
+          {/*loop through list again? for each new id, select for new description*/}
+          {/*<button onClick={handleClicks}>Love it!</button>*/}
         
         
       </div>
