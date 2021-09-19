@@ -32,24 +32,19 @@ function App() {
   // const [liked, setLiked] = useState(false);
 
   //PUT
-  // const handleLikes = () => {
-  //   console.log('Updating gallery to liked!');
-  //   const itemId = response.data.id;
-  //   axios({
-  //     method: 'PUT',
-  //     url: `/gallery/like/${itemId}`
-  //   }).then((response) => {
-  //     setLiked();
-  //   }).catch((error) => {
-  //     alert('Error with PUT.');
-  //     console.log('error with updating likes!', error);
-  //   })
-  // }
-  // insert state here for toggle!! Have T or F variable
-  // function to switch between T or False
-  // maybe just make a new component to specify elements in conditional operator
-  
-  
+  const likePicture = () => {
+    console.log('Updating gallery to liked!');
+    const itemId = response.data.id;
+    axios({
+      method: 'PUT',
+      url: `/gallery/like/${itemId}`
+    }).then((response) => {
+      getGallery();
+    }).catch((error) => {
+      alert('Error with PUT.');
+      console.log('error with updating likes!', error);
+    })
+  }
   
   
   
@@ -62,7 +57,9 @@ function App() {
         <div>
           
 
-        <GalleryList list={galleryList} />
+        <GalleryList 
+        list={galleryList}
+        likePicture={likePicture} />
         
         </div>
         

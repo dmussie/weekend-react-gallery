@@ -8,8 +8,10 @@ function GalleryList({list, selectPicture}) {
             {list.map(picture => (
             
     
-                <GalleryItem key={picture.id} picture={picture}  
-                selectPicture={selectPicture}/>
+                <GalleryItem key={picture.id} 
+                picture={picture}  
+                selectPicture={selectPicture} />
+                
                 
             
                 

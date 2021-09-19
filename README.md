@@ -14,9 +14,9 @@ The Gallery of My Life
 [x] - Create GET in App.jsx 
 [x] - Create GalleryList component and pass in gallery data stored in App via props
 [x] - Iterate over GalleryList data and make GalleryItems
-[] - Create GalleryItem.jsx component and pass GalleryItem via props
-[] - Update GalleryList with GalleryItem component and display image
-[] - Swap image w/ description on click. USE CONDITIONAL RENDERING
+[x] - Create GalleryItem.jsx component and pass GalleryItem via props
+[x] - Update GalleryList with GalleryItem component and display image
+[x] - Swap image w/ description on click. USE CONDITIONAL RENDERING
 [] - Display number of likes for each item, include like button
 [] - Update PUT (the like count) /gallery/like/:id
 [] - Enable gallery update upon click of like button 

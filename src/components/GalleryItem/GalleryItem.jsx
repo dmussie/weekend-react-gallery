@@ -1,8 +1,14 @@
 import {useState} from 'react';
 
-function GalleryItem({picture, selectPicture}) {
+function GalleryItem({picture}) {
     const pictureId = picture.id;
     const [pictureSelected, setPictureSelected] = useState(false);
+    const [pictureLikes, setPictureLike] = useState(0);
+
+    const handleLikes = () => {
+        console.log('clicked!');
+        setPictureLike(pictureLikes + 1);
+    }
     
     return (
         <>      
@@ -14,7 +20,10 @@ function GalleryItem({picture, selectPicture}) {
             )
             }
             
-             
+            <p>{pictureLikes} people love this!</p>
+            <button onClick={() => setPictureLike(pictureLikes + 1)}>Love it!</button>
+            
+
         </>    
     )
     
