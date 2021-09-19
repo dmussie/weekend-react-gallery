@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 import {useState, useEffect} from 'react';
+import GalleryList from '../GalleryList/GalleryList.jsx';
 //import { response } from 'express';
 
  
@@ -9,10 +10,10 @@ import {useState, useEffect} from 'react';
 function App() {
 
   const [galleryList, setGalleryList] = useState([]);
-  console.log(galleryList);
-  useEffect(() => {
-    getGallery()
-  }, [])
+    console.log(galleryList);
+    useEffect(() => {
+        getGallery()
+    }, [])
 
   //GET
   const getGallery = () => {
@@ -46,40 +47,24 @@ function App() {
   // }
   // insert state here for toggle!! Have T or F variable
   // function to switch between T or False
+  // maybe just make a new component to specify elements in conditional operator
   
   
-  const [galleryBoolean, setGalleryBoolean] = useState(false);
-    const handleSwitch = (pictureId) => {
-      console.log('User clicked image: ', pictureId);
-      switchPicture(pictureId);
-    }  
+  
+  
+  
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
-        {galleryList.map(picture => (
-          {/** use state variable*/},
-          {/** single line function */},
-          {/** START HERE ternary operator, do I want an image or description: if TRUE, display image, if FALSE display description */},
-          {/** Figure out True or False for operator */},
-          (
-          galleryBoolean ? (
-            <p>{picture.description}</p>,
-            <img key={picture.id} onClick={() => setGalleryBoolean(true)} />
-          ) : (
-            
-            <img key={picture.id} src={picture.path} /> 
-          )
-            
-         
-          )
+        <div>
           
-          
-          
-          
-        ))}
+
+        <GalleryList list={galleryList} />
+        
+        </div>
         
           {/*loop through list again? for each new id, select for new description*/}
           {/*<button onClick={handleClicks}>Love it!</button>*/}

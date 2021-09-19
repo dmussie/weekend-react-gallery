@@ -12,8 +12,8 @@ The Gallery of My Life
 
 # Base Mode
 [x] - Create GET in App.jsx 
-[] - Create GalleryList component and pass in gallery data stored in App via props
-[] - Iterate over GalleryList data and make GalleryItems
+[x] - Create GalleryList component and pass in gallery data stored in App via props
+[x] - Iterate over GalleryList data and make GalleryItems
 [] - Create GalleryItem.jsx component and pass GalleryItem via props
 [] - Update GalleryList with GalleryItem component and display image
 [] - Swap image w/ description on click. USE CONDITIONAL RENDERING
