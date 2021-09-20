@@ -16,6 +16,7 @@ function App() {
     }, [])
 
   //GET
+  //Retrieve data from router to be posted to DOM
   const getGallery = () => {
     axios({
       method: 'GET',
@@ -29,9 +30,9 @@ function App() {
     })
   }
 
-  // const [liked, setLiked] = useState(false);
 
   //PUT
+  //Handles the like feature
   const likePicture = () => {
     console.log('Updating gallery to liked!');
     const itemId = response.data.id;
@@ -53,8 +54,8 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>Gallery goes here</p>
-        <div>
+        <h2>Welcome!</h2>
+        <div className="App-container">
           
 
         <GalleryList 
@@ -62,9 +63,6 @@ function App() {
         likePicture={likePicture} />
         
         </div>
-        
-          {/*loop through list again? for each new id, select for new description*/}
-          {/*<button onClick={handleClicks}>Love it!</button>*/}
         
         
       </div>

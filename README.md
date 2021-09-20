@@ -8,7 +8,8 @@ The Gallery of My Life
 
 # Setup
 [x] - npm install, npm run server and npm run client
-[] - upload personal images (jpeg) for project
+[x] - upload personal images (jpeg) for project
+[] - CSS styling...
 
 # Base Mode
 [x] - Create GET in App.jsx 
@@ -19,7 +20,7 @@ The Gallery of My Life
 [x] - Swap image w/ description on click. USE CONDITIONAL RENDERING
 [x] - Display number of likes for each item, include like button
 [x] - Update PUT (the like count) /gallery/like/:id
-[] - Enable gallery update upon click of like button 
+[x] - Enable gallery update upon click of like button 
 
 # Stretch
 [] - maybe we'll get here...

@@ -5,11 +5,8 @@ function GalleryItem({picture}) {
     const [pictureSelected, setPictureSelected] = useState(false);
     const [pictureLikes, setPictureLike] = useState(0);
 
-    const handleLikes = () => {
-        console.log('clicked!');
-        setPictureLike(pictureLikes + 1);
-    }
-    
+    //Conditional operator, if the picture is NOT clicked, display image
+    //If picture IS clicked, display description
     return (
         <>      
             {

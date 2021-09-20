@@ -4,7 +4,8 @@ function GalleryList({list, selectPicture}) {
     
     // gallery item within map
     return (
-        <p>
+        <div>
+            
             {list.map(picture => (
             
     
@@ -16,7 +17,8 @@ function GalleryList({list, selectPicture}) {
             
                 
             ))}
-        </p>
+            
+        </div>
         
     )
 }
